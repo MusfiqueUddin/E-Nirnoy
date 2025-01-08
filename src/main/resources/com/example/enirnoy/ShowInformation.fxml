@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/E-nirnoy_Logo.png" />
+         </image>
+      </ImageView>
+      <TextArea layoutX="22.0" layoutY="210.0" prefHeight="105.0" prefWidth="559.0" text="E-Nirnoy is a user-friendly and secure platform for managing elections efficiently.&#10;Developed by Musfique and Purnata from UIU's CSE department, it streamlines&#10;voter registration, secure voting, and real-time monitoring, ensuring transparency&#10;and ease in the electoral process.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+   </children>
+</Pane>
