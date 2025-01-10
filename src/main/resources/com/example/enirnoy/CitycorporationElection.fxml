@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #748c66;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enirnoy.CitycorElectionController">
+   <children>
+      <AnchorPane layoutX="11.0" layoutY="22.0" prefHeight="43.0" prefWidth="582.0" style="-fx-background-color: #ffffff; -fx-border-color: #226b13;">
+         <children>
+            <Text layoutX="146.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City Corporation Election">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <HBox alignment="TOP_CENTER" layoutX="12.0" layoutY="77.0" prefHeight="36.0" prefWidth="582.0">
+         <children>
+            <Label text="City Corporation Area :  ">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cityComboBox" onAction="#initialize" prefHeight="26.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" layoutX="21.0" layoutY="113.0" prefHeight="36.0" prefWidth="582.0">
+         <children>
+            <Label text="  Ward Number :           ">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="wardComboBox" onAction="#loadWards" prefHeight="26.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" layoutX="51.0" layoutY="152.0" prefHeight="79.0" prefWidth="503.0" spacing="10.0">
+         <children>
+            <ToggleButton fx:id="mayorToggleButton" mnemonicParsing="false" onAction="#initialize" style="-fx-border-color: #226b13; -fx-border-width: 3px;" text="Mayor">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="councilorToggleButton" mnemonicParsing="false" onAction="#initialize" style="-fx-border-color: #226b13; -fx-border-width: 3px;" text="Counsilor">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="womanCouncilorToggleButton" mnemonicParsing="false" onAction="#initialize" style="-fx-border-color: #226b13; -fx-border-width: 3px;" text="Woman Counsilor">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </ToggleButton>
+         </children>
+      </HBox>
+      <VBox fx:id="Candidatelist" layoutX="14.0" layoutY="198.0" prefHeight="187.0" prefWidth="576.0" spacing="10.0">
+         <children>
+            <ListView fx:id="candidateListView" onDragDetected="#initialize" onEditStart="#initialize" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

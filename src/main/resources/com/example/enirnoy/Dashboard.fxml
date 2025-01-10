@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enirnoy.DashboardController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Text layoutX="230.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Text>
+            <Rectangle fx:id="userReportBox" arcHeight="5.0" arcWidth="5.0" height="85.0" layoutX="36.0" layoutY="46.0" onDragDetected="#handleUserReportClick" stroke="BLACK" strokeType="INSIDE" width="202.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.4307992160320282" green="0.6009097099304199" blue="0.8947368264198303" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle fx:id="modifyVandCBox" arcHeight="5.0" arcWidth="5.0" height="85.0" layoutX="36.0" layoutY="283.0" onDragDetected="#handleModifyVandCClick" stroke="BLACK" strokeType="INSIDE" width="202.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5228070020675659" green="0.9473684430122375" blue="0.6077193021774292" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="0.5228070020675659" green="0.9473684430122375" blue="0.6077193021774292" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9333333373069763" green="0.9473684430122375" blue="0.9375438690185547" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle fx:id="electionTemplateBox" arcHeight="5.0" arcWidth="5.0" height="85.0" layoutX="363.0" layoutY="52.0" onDragDetected="#handleElectionTemplateClick" stroke="BLACK" strokeType="INSIDE" width="202.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9473684430122375" blue="0.9401754140853882" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.43618324398994446" green="0.8105263113975525" blue="0.42327484488487244" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle fx:id="liveElectionListBox" arcHeight="5.0" arcWidth="5.0" height="85.0" layoutX="370.0" layoutY="283.0" onDragDetected="#handleLiveElectionListClick" stroke="BLACK" strokeType="INSIDE" width="202.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9499415159225464" green="0.9789473414421082" blue="0.9557427167892456" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9973082099596231">
+                           <color>
+                              <Color red="0.2732163667678833" green="0.5373255610466003" blue="0.7684210538864136" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.2732163667678833" green="0.5373255610466003" blue="0.7684210538864136" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle fx:id="currentElectionBox" arcHeight="5.0" arcWidth="5.0" height="85.0" layoutX="195.0" layoutY="158.0" onDragDetected="#handleCurrentElectionClick" stroke="BLACK" strokeType="INSIDE" width="202.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.5898635387420654" blue="0.8847953081130981" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.009421265141318967">
+                           <color>
+                              <Color red="0.9368420839309692" green="0.5898635387420654" blue="0.8847953081130981" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9333333373069763" green="0.9473684430122375" blue="0.9375438690185547" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Text fx:id="userReportText" layoutX="66.0" layoutY="88.0" onDragDetected="#handleUserReportClick" strokeType="OUTSIDE" strokeWidth="0.0" text="User Report Box">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="electionTemplateText" layoutX="381.0" layoutY="88.0" onDragDetected="#handleElectionTemplateClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Election Template">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="currentElectionText" layoutX="230.0" layoutY="206.0" onDragDetected="#handleCurrentElectionClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Election">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="modifyVandCText" layoutX="66.0" layoutY="314.0" onDragDetected="#handleModifyVandCClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Voter and Candidate Account" wrappingWidth="142.03125">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="liveElectionListText" layoutX="403.0" layoutY="331.0" onDragDetected="#handleLiveElectionListClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Live Election List">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

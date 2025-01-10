@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="662.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.enirnoy.PublishresultController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="534.0" prefWidth="662.0" style="-fx-background-color: #3b5763;">
+         <children>
+            <ComboBox fx:id="electionComboBox" layoutX="76.0" layoutY="39.0" onAction="#initialize" prefHeight="48.0" prefWidth="519.0" promptText="Election" style="-fx-border-color: #000000; -fx-border-width: 3px;" />
+            <HBox alignment="TOP_CENTER" layoutX="86.0" layoutY="111.0" prefHeight="50.0" prefWidth="499.0" spacing="10.0">
+               <children>
+                  <ComboBox fx:id="divisionComboBox" onAction="#initialize" prefWidth="150.0" promptText="Division" style="-fx-border-color: #000000; -fx-border-width: 3px;" />
+                  <ComboBox fx:id="districtComboBox" onAction="#initialize" prefWidth="150.0" promptText="District" style="-fx-border-color: #000000; -fx-border-width: 3px;" />
+               </children>
+            </HBox>
+            <ListView fx:id="winnerListView" layoutX="24.0" layoutY="182.0" prefHeight="200.0" prefWidth="596.0" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

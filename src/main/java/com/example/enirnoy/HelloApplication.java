@@ -3,21 +3,26 @@ package com.example.enirnoy;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class HelloApplication extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("VoterScreen.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 820, 620);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
-    }
+        public void start(Stage primaryStage) {
+            try {
+                // Load the Dashboard.fxml file
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("Dashboard.fxml"));
+                AnchorPane root = loader.load();
 
-    public static void main(String[] args) {
-        launch();
-    }
-}
+                // Create a scene with the loaded layout and set it on the stage
+                Scene scene = new Scene(root, 800, 600); // You can adjust the size as needed
+                primaryStage.setScene(scene);
+
+                // Set the stage title and show it
+                primaryStage.setTitle("Dashboard");
+                primaryStage.show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }}

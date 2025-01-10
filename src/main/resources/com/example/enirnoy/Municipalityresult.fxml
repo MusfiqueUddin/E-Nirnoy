@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #a1bf88;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enirnoy.MunicipalityresultController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="188.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="66.0" prefWidth="600.0" text="                Municipality General / By Election">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <HBox alignment="TOP_CENTER" prefHeight="60.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <ComboBox fx:id="divisionComboBox" onAction="#initialize" prefWidth="150.0" promptText="Division" style="-fx-border-color: #236026; -fx-border-width: 3px;" />
+                  <ComboBox fx:id="districtComboBox" onAction="#initialize" prefWidth="150.0" promptText="District" style="-fx-border-color: #236026; -fx-border-width: 3px;" />
+                  <ComboBox fx:id="pourosovaComboBox" onAction="#initialize" prefWidth="150.0" promptText="Pourosobha" style="-fx-border-color: #236026; -fx-border-width: 3px;" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="62.0" prefWidth="600.0" spacing="15.0">
+               <children>
+                  <Button fx:id="mayorButton" mnemonicParsing="false" onAction="#showCandidates" prefHeight="26.0" prefWidth="106.0" style="-fx-border-color: #236026; -fx-border-width: 3px;" text="Mayor">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="councilorButton" mnemonicParsing="false" onAction="#showCandidates" prefHeight="26.0" prefWidth="106.0" style="-fx-border-color: #236026; -fx-border-width: 3px;" text="Counsilor">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="womanCouncilorButton" mnemonicParsing="false" onAction="#showCandidates" prefHeight="32.0" prefWidth="159.0" style="-fx-border-color: #236026; -fx-border-width: 3px;" text="Woman Counsilor">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ListView fx:id="candidateListView" layoutX="22.0" layoutY="172.0" prefHeight="200.0" prefWidth="556.0" />
+   </children>
+</AnchorPane>
