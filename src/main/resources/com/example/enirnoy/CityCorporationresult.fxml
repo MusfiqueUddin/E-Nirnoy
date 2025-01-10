@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9ab59b;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enirnoy.CitycorporationreultController">
+   <children>
+      <Label layoutX="68.0" layoutY="14.0" prefHeight="42.0" prefWidth="487.0" text="  City Corporation Election">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="25.0" layoutY="76.0" prefHeight="76.0" prefWidth="559.0" spacing="10.0">
+         <children>
+            <ComboBox fx:id="cityComboBox" onAction="#initialize" prefHeight="26.0" prefWidth="205.0" promptText="Division" style="-fx-background-color: #ffffff; -fx-border-width: 3px; -fx-border-color: #226b13;" />
+            <ComboBox fx:id="wardComboBox" onAction="#loadWards" prefHeight="26.0" prefWidth="205.0" promptText="District" style="-fx-background-color: #ffffff; -fx-border-width: 3px; -fx-border-color: #226b13;" />
+         </children>
+      </VBox>
+      <HBox alignment="TOP_CENTER" layoutX="32.0" layoutY="172.0" prefHeight="76.0" prefWidth="559.0" spacing="10.0">
+         <children>
+            <ToggleButton fx:id="mayorToggleButton" mnemonicParsing="false" onAction="#initialize" style="-fx-border-color: #226b13; -fx-border-width: 3px;" text="Mayor">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="councilorToggleButton" mnemonicParsing="false" style="-fx-border-color: #226b13; -fx-border-width: 3px;" text="Counsilor">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="womanCouncilorToggleButton" mnemonicParsing="false" style="-fx-border-color: #226b13; -fx-border-width: 3px;" text="Woman Counsilor">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </ToggleButton>
+         </children>
+      </HBox>
+      <ListView fx:id="candidateListView" layoutX="15.0" layoutY="226.0" prefHeight="159.0" prefWidth="566.0" />
+   </children>
+</AnchorPane>

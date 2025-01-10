@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8da662;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enirnoy.UpazilaresultController">
+   <children>
+      <Label layoutX="-1.0" layoutY="14.0" prefHeight="34.0" prefWidth="600.0" style="-fx-background-color: #ffffff; -fx-border-color: #236025; -fx-border-width: 3px;" text="                                Upazila General Election Result">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="divisionComboBox" layoutX="113.0" layoutY="58.0" onAction="#initialize" prefWidth="150.0" promptText="Division" style="-fx-background-color: #ffffff; -fx-border-color: #236025; -fx-border-width: 3px;" />
+      <ComboBox fx:id="upazilaComboBox" layoutX="300.0" layoutY="58.0" onAction="#loadUpazilas" prefWidth="150.0" promptText="Upazila" style="-fx-background-color: #ffffff; -fx-border-color: #236025; -fx-border-width: 3px;" />
+      <Button layoutX="68.0" layoutY="115.0" mnemonicParsing="false" onAction="#showChairmanCandidates" style="-fx-background-color: #ffffff; -fx-border-color: #236025; -fx-border-width: 3px;" text="Chairman">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="188.0" layoutY="115.0" mnemonicParsing="false" onAction="#showViceChairmanCandidates" style="-fx-background-color: #ffffff; -fx-border-color: #236025; -fx-border-width: 3px;" text="Vice-Chairman">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="350.0" layoutY="115.0" mnemonicParsing="false" onAction="#showWomanViceChairmanCandidates" style="-fx-background-color: #ffffff; -fx-border-color: #236025; -fx-border-width: 3px;" text="Woman Vice-Chairman">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <VBox layoutX="8.0" layoutY="165.0" prefHeight="182.0" prefWidth="580.0">
+         <children>
+            <ListView fx:id="candidateListView" prefHeight="189.0" prefWidth="600.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1d524c;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enirnoy.LiveElectionListController">
+   <children>
+      <Rectangle fx:id="liveResultRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="60.0" layoutY="71.0" onDragDetected="#initialize" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 25;" width="240.0" />
+      <Rectangle fx:id="publishResultRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="269.0" layoutY="218.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 25;" width="240.0" />
+      <Text layoutX="103.0" layoutY="120.0" onDragDetected="#initialize" onMouseClicked="#initialize" strokeType="OUTSIDE" strokeWidth="0.0" text="Live Result">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="312.0" layoutY="275.0" onDragDetected="#initialize" onMouseClicked="#initialize" strokeType="OUTSIDE" strokeWidth="0.0" text="Publish Result">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

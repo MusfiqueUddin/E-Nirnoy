@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="671.0" prefWidth="600.0" style="-fx-background-color: #85c99b;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enirnoy.ListofElectionController">
+   <children>
+      <Label layoutX="183.0" layoutY="8.0" text="Election Lists">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <ScrollPane hbarPolicy="ALWAYS" layoutY="66.0" prefHeight="494.0" prefWidth="600.0" style="-fx-background-color: #70b6d4;" vbarPolicy="ALWAYS">
+         <content>
+            <AnchorPane prefHeight="477.0" prefWidth="598.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="94.0" layoutX="20.0" layoutY="14.0" stroke="#226b13" strokeType="OUTSIDE" strokeWidth="3.0" width="540.0" />
+                  <Button fx:id="parliamentButton" layoutX="221.0" layoutY="75.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: #768e99;" text="Parliament Election">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Text fill="#164618" layoutX="128.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="National Parliament Election" wrappingWidth="334.4664306640625">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="94.0" layoutX="23.0" layoutY="372.0" stroke="#226b13" strokeType="OUTSIDE" strokeWidth="3.0" width="540.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="94.0" layoutX="23.0" layoutY="128.0" stroke="#226b13" strokeType="OUTSIDE" strokeWidth="3.0" width="540.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="83.0" layoutX="20.0" layoutY="243.0" stroke="#226b13" strokeType="OUTSIDE" strokeWidth="3.0" width="546.0" />
+                  <Text fill="#164618" layoutX="106.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Municipality General / By Election">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="municipalityButton" layoutX="219.0" layoutY="428.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: #768e99;" text="Municipality Election">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Text fill="#164618" layoutX="90.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upazila Parishad General Election" wrappingWidth="405.66644287109375">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#164618" layoutX="138.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City Corporation Election" wrappingWidth="334.4664306640625">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="upazilaButton" layoutX="224.0" layoutY="175.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: #768e99;" text="Upazila Election">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cityCorporationButton" layoutX="199.0" layoutY="295.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: #768e99;" text="City Corporation Election">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="editElectionButton" layoutX="440.0" layoutY="585.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: #ffffff; -fx-border-color: #164618; -fx-border-width: 3px;" text="Edit Election">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
